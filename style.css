@@ -1,0 +1,144 @@
+html{
+    background-color: rgba(127, 255, 212, .25);
+}
+
+.burger{
+    /*display: none;*/
+    width: 2rem;
+    aspect-ratio: 1;
+    border: 2px solid #2f2f2f;
+    border-radius: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+   background-color: beige;
+   display: flex;
+   justify-content: space-around; 
+   text-align: center;
+   padding: 1em 0;
+}
+nav ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 25%;
+}
+
+@media (max-width: 600px){
+    nav ul{
+        display: none;
+    }
+
+}
+.container{
+    width: 100%;
+    font-size: 50px;
+    
+}
+.header{
+    background-image: url(./shoping.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header, .main{
+    text-align: center;
+    padding-top: 50px;
+}
+.label{
+    font-size: 25px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin: auto;
+}
+.input #input{
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 25%;
+    height: fit-content;
+    margin: 0 1em;
+    text-align: center;
+}
+@media(max-width: 600px){
+    .input{
+        width: 85%;
+        justify-content: space-between;
+    }
+    .input #input{
+        width: 65%;
+    }
+}
+
+.input .btn{
+    display: inline-block;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.submit{
+    color: green;
+    font-size: 45px;
+    text-align: center;
+    background-color: #929292;
+    border-radius: 50%;
+    line-height: 45px;
+    width: 45px;
+    aspect-ratio: 1 / 1;
+}
+#reset{
+    color: red;
+}
+li > input[type="checkbox"]:checked ~ .text{
+    text-decoration-line: line-through;
+    opacity: .5;
+}
+.complete{
+    text-decoration-line: line-through;
+    opacity: .5;
+}
+
+li.task{
+    /* display: inline-block; */
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.list{
+    border: 2px solid gray;
+    max-width: max-content;
+    min-width: 200px;
+    font-size: 30px;
+    text-align: start;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.list #list{
+    list-style: none;
+    list-style-position: inside;
+}

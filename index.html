@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar section -->
+    <nav>
+        <div class="logo">
+            <img src="#" alt="logo">
+        </div>
+        <ul>
+            <li>home</li>
+            <li>list</li>
+            <li>help</li>
+        </ul>
+    </nav>
+
+    <!-- the applecation container -->
+    <div class="container">
+        <header class="header">
+            <h2 class="title">Shopping List</h2>
+        </header>
+    
+        <main class="main">
+            <section class="input">
+                <label class="label" for="input">Items: </label>
+                <input id="input" type="text">
+                <button type="submit" class="submit">+</button>
+            </section>
+            
+            <section class="list">
+                <b id="list-title">Tasks List</b>
+                <ul id="list"></ul>
+            </section>
+            <section class="btn">
+                <button type="reset" id="reset">Delete</button>
+            </section>
+    
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <!-- <script src="code.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
