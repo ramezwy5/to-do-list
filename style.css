@@ -101,11 +101,11 @@ button:hover{
 
 .submit{
     color: green;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     background-color: #929292;
     border-radius: 50%;
-    line-height: 45px;
+    line-height: 15px;
     width: 45px;
     aspect-ratio: 1 / 1;
 }
