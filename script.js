@@ -55,6 +55,7 @@ function taskItem(taskAdd){
     // complete task
     $("li.task").on("click",function (){
         $(this).addClass("complete");
+        addToList.taskObj["complete"] = true;
     })
 }
 
