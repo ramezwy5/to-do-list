@@ -39,7 +39,7 @@ window.onload = () => itemAdded.focus();
 // create object for tasks has id and text.
 function addToList(){
     if(itemAdded.val() !== ""){
-        let taskObj = {id: Date.now(), text: itemAdded.val()};
+        let taskObj = {id: Date.now(), text: itemAdded.val(), complete: null};
         tasksList.push(taskObj); // add object to tasksList        
         taskItem(taskObj.text);
         itemAdded.val("");
